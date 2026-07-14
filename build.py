@@ -260,7 +260,7 @@ def build():
     # Set up translations dictionary
     translations = {
         "de": {
-            "meta_title": "EGMR-Beschwerde: Martin & Lucas Heinrich ./. Deutschland",
+            "meta_title": "EGMR-Beschwerde: Martin Heinrich ./. Deutschland",
             "meta_desc": "Dokumentation der Menschenrechtsbeschwerde beim EGMR gegen den repressiven Schulzwang in Sachsen ohne Qualitätssicherung.",
             "badge": "Menschenrechtsbeschwerde",
             "title": "Staatlicher Schulzwang?",
@@ -284,10 +284,12 @@ def build():
             "next_to_documents": "Weiter zu den Dokumenten",
             "back_to_overview": "Zurück zur Übersicht",
             "back_to_facts": "Zurück zur Chronologie",
-            "back_to_legal": "Zurück zur Begründung"
+            "back_to_legal": "Zurück zur Begründung",
+            "docs_contact_title": "Presseanfragen & Wissenschaftlicher Austausch",
+            "docs_contact_text": "Journalisten, Wissenschaftler und juristische Fachkreise können für den Zugang zu den ungeschwärzten Originaldokumenten und behördlichen Akten gerne eine persönliche Anfrage stellen. Da GitHub keine privaten Nachrichten unterstützt, kontaktieren Sie mich bitte direkt über die im GitHub-Profil hinterlegte E-Mail-Adresse."
         },
         "en": {
-            "meta_title": "ECHR Application: Martin & Lucas Heinrich v. Germany",
+            "meta_title": "ECHR Application: Martin Heinrich v. Germany",
             "meta_desc": "Documentation of the human rights complaint to the ECHR challenging compulsory school attendance in Saxony without quality assurance.",
             "badge": "ECHR Application",
             "title": "State School Coercion?",
@@ -311,7 +313,9 @@ def build():
             "next_to_documents": "Next to Documents",
             "back_to_overview": "Back to Overview",
             "back_to_facts": "Back to Timeline",
-            "back_to_legal": "Back to Legal Arguments"
+            "back_to_legal": "Back to Legal Arguments",
+            "docs_contact_title": "Press Inquiries & Academic Exchange",
+            "docs_contact_text": "Journalists, researchers, and legal professionals may request access to the unredacted original documents and official records. Since GitHub does not support private messaging, please contact me directly using the email address listed in my GitHub profile."
         }
     }
     
