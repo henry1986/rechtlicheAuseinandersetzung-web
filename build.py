@@ -5,7 +5,7 @@ import json
 
 # Configuration
 # Go to https://web3forms.com/ to get your free Access Key and paste it here:
-WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE"
+WEB3FORMS_ACCESS_KEY = "51d5d6f8-351d-4f5c-ace8-341fee5619d0"
 
 def md_to_html(md_text):
     if not md_text:
