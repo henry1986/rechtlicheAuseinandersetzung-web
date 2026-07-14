@@ -3,6 +3,10 @@ import os
 import re
 import json
 
+# Configuration
+# Go to https://web3forms.com/ to get your free Access Key and paste it here:
+WEB3FORMS_ACCESS_KEY = "YOUR_ACCESS_KEY_HERE"
+
 def md_to_html(md_text):
     if not md_text:
         return ""
@@ -286,8 +290,13 @@ def build():
             "back_to_facts": "Zurück zur Chronologie",
             "back_to_legal": "Zurück zur Begründung",
             "docs_contact_title": "Presseanfragen & Wissenschaftlicher Austausch",
-            "docs_contact_text": "Journalisten, Wissenschaftler und juristische Fachkreise können für den Zugang zu den ungeschwärzten Originaldokumenten und behördlichen Akten gerne eine persönliche Anfrage stellen. Da GitHub keine privaten Nachrichten unterstützt, kontaktieren Sie mich bitte direkt über die E-Mail-Adresse in meinem",
-            "docs_contact_link_text": "GitHub-Profil (henry1986)"
+            "docs_contact_text": "Journalisten, Wissenschaftler und juristische Fachkreise können hier eine Anfrage senden, um Zugang zu den ungeschwärzten Originalbelegen und Akten zu erhalten.",
+            "form_label_name": "Name / Organisation",
+            "form_label_email": "E-Mail-Adresse",
+            "form_label_message": "Ihre Nachricht",
+            "form_btn_send": "Anfrage senden",
+            "form_sending_status": "Wird gesendet...",
+            "form_success_message": "Vielen Dank! Ihre Anfrage wurde erfolgreich übermittelt."
         },
         "en": {
             "meta_title": "ECHR Application: Martin Heinrich v. Germany",
@@ -316,8 +325,13 @@ def build():
             "back_to_facts": "Back to Timeline",
             "back_to_legal": "Back to Legal Arguments",
             "docs_contact_title": "Press Inquiries & Academic Exchange",
-            "docs_contact_text": "Journalists, researchers, and legal professionals may request access to the unredacted original documents and official records. Since GitHub does not support private messaging, please contact me directly using the email address listed in my",
-            "docs_contact_link_text": "GitHub profile (henry1986)"
+            "docs_contact_text": "Journalists, researchers, and legal professionals may submit a request here to obtain access to the unredacted original documents and official records.",
+            "form_label_name": "Name / Organization",
+            "form_label_email": "Email Address",
+            "form_label_message": "Your Message",
+            "form_btn_send": "Send Request",
+            "form_sending_status": "Sending...",
+            "form_success_message": "Thank you! Your request has been successfully submitted."
         }
     }
     
@@ -448,6 +462,7 @@ def build():
         output = output.replace("{{lang}}", lang)
         output = output.replace("{{hreflangs}}", hreflangs_str)
         output = output.replace("{{giscus_lang}}", "de" if lang == "de" else "en")
+        output = output.replace("YOUR_ACCESS_KEY_HERE", WEB3FORMS_ACCESS_KEY)
         
         # Timeline inject
         output = output.replace("{{facts_timeline_json}}", timeline_json)
